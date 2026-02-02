@@ -14,9 +14,15 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(join(__dirname, "public")));
 
 app.get('/headline', (req, res) => {
-    res.sendFile( join(__dirname, '/views/headline.html') );
-})
+  res.sendFile( join(__dirname, '/views/headline.html') );
+});
+
+app.get('/buscador', (req, res) => { 
+  res.sendFile( join(__dirname, '/views/buscador.html') );
+});
+
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-});
+}); 
