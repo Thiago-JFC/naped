@@ -11,7 +11,7 @@ hamburgerBtn.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
 document.querySelectorAll('.mobile-nav a').forEach(a => {
 a.addEventListener('click', () => {
     topbar.classList.remove('is-open');
-    hamburgerBtn.setAttribute('aria-expanded', 'false');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');   
     hamburgerBtn.setAttribute('aria-label', 'Abrir menu');
 });
 });
